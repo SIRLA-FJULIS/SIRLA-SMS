@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% set active_page = "material_list" %}
+{% block title %} Material List {% endblock title %}
+{% block content %}
+    <ul class="list-group">    
+    {% for material in materials %}
+        <li class="list-group-item">
+            <a href="{{ material.url }}">{{ material.topic }}</a>
+            <span class="float-right">
+                <button type="button" class="btn btn-sm btn-outline-primary" data-id="{{ material.id }}">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-danger" data-id="{{ material.id }}">Delete</button>
+            </span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
