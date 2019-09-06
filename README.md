@@ -1,5 +1,6 @@
 # SIRLA Simple Management System
 > Created by 土豆
+
 > 開發筆記: https://hackmd.io/@Bluebell3310/r1mWRe5WH
 
 ## 開發進度
@@ -17,4 +18,5 @@
   * 可獲得每堂課教材
   * 可生成簽到用QRCode
   * 可查詢自己的出席狀況
-  
+
+**開放許願各種功能，做不做到的是另一回事XD**
