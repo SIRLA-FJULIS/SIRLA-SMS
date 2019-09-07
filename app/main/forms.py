@@ -11,7 +11,6 @@ class New_Material_Form(FlaskForm):
         query_factory=lambda: Series.query.all(),
         validators=[DataRequired()]
     )
-    topic = StringField("Material Name", validators=[DataRequired()])
     note_url = URLField("Note URL", validators=[url()])
     slides_url = URLField("Slides URL", validators=[url()])
 

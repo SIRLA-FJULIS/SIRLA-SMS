@@ -12,13 +12,12 @@ def index():
 def new_material():
       form = New_Material_Form()
       if form.validate_on_submit():
-         topic = form.topic.data
          series = form.series.data
-         new_material = Material(topic=topic, series_id=series.id)
-         db.session.add(new_material)
-         db.session.commit()
+         new_material = Material(series_id=series.id)
          note_url = form.note_url.data
          slides_url = form.slides_url.data
+         db.session.add(new_material)
+         db.session.commit()
          return redirect(url_for('main.new_material'))
 
       return render_template("main/new_material.html", form=form)

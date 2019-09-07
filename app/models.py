@@ -12,7 +12,6 @@ class Series(db.Model):
 class Material(db.Model):
     __tablename__ = 'materials'
     id = db.Column(db.Integer, primary_key=True, unique=True, index=True)
-    topic = db.Column(db.String(64), index=True)
     series_id = db.Column(db.Integer, db.ForeignKey('series.id'))
     notes = db.relationship('Note', backref='material')
     slides = db.relationship('Slides', backref='material')
