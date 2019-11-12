@@ -1,7 +1,7 @@
 # SIRLA Simple Management System
 > Created by 土豆
 
-> 開發筆記: https://hackmd.io/@Bluebell3310/r1mWRe5WH
+> 開發筆記: https://hackmd.io/@NetJagaimo/r1mWRe5WH
 
 ## 開發進度
 * 可新增教材
